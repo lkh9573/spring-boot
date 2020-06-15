@@ -31,7 +31,8 @@
 				id="bs-example-navbar-collapse-1">
 
 				<ul class="nav navbar-nav navbar-right">
-					<li><a href="#">회원 dd가입</a></li>
+					<li><a href="#">회원 가입</a></li>
+					<li><a href="/list">사용자 목록</a></li>
 				</ul>
 			</div>
 			<!-- /.navbar-collapse -->
@@ -39,22 +40,26 @@
 		<!-- /.container-fluid -->
 	</nav>
 	<div class="container">
-	<!-- ddddddasdasdasddd -->
-		<form>
+		<form action="/create" method="post">
 			<div class="form-group">
 				<label for="UserId">ID</label> <input
-					type="text" class="form-control" id="UserId"
-					placeholder="User Id">
+					type="text" class="form-control" name="userId"
+					placeholder="사용하실 아이디를 입력해주세요">
 			</div>
 			<div class="form-group">
 				<label for="password">Password</label> <input
-					type="password" class="form-control" id="password"
-					placeholder="User Password">
+					type="password" class="form-control" name="password"
+					placeholder="사용하실 비밀번호를 입력해주세요">
 			</div>
 			<div class="form-group">
 				<label for="name">name</label> <input
-					type="text" class="form-control" id="name"
-					placeholder="User Name">
+					type="text" class="form-control" name="name"
+					placeholder="이름을 입력해주세요">
+			</div>
+			<div class="form-group">
+				<label for="name">email</label> <input
+					type="email" class="form-control" name="email"
+					placeholder="이메일을 입력해주세요">
 			</div>
 			<button type="submit" class="btn btn-default">Submit</button>
 		</form>
